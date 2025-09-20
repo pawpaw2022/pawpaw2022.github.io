@@ -88,7 +88,9 @@ latest_posts:
 </section>
 
 <!-- Blog Section -->
+
 {% if site.sections.blog %}
+
 <section id="blog" class="section">
   <div class="container">
     <h2 class="section-title">Blog</h2>
@@ -242,6 +244,7 @@ latest_posts:
         {% endfor %}
       </ul>
     </div>
+
   </div>
 </section>
 {% endif %}
