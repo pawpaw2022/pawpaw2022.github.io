@@ -1,15 +1,11 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="post single-page-content">
   <header class="post-header">
     <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
+      <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+      {{ site.last_name }}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
@@ -41,27 +37,33 @@ layout: default
     <div class="clearfix">{{ content }}</div>
 
     <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+    {% if site.sections.news and page.announcements and page.announcements.enabled %}
+      <section id="news" class="section">
+        <div class="container">
+          <h2 class="section-title">News</h2>
+          {% include news.liquid limit=true %}
+        </div>
+      </section>
     {% endif %}
 
     <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+    {% if site.sections.latest_posts and page.latest_posts and page.latest_posts.enabled %}
+      <section id="latest-posts" class="section">
+        <div class="container">
+          <h2 class="section-title">Latest Posts</h2>
+          {% include latest_posts.liquid %}
+        </div>
+      </section>
     {% endif %}
 
     <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+    {% if site.sections.selected_papers and page.selected_papers %}
+      <section id="selected-papers" class="section">
+        <div class="container">
+          <h2 class="section-title">Selected Publications</h2>
+          {% include selected_papers.liquid %}
+        </div>
+      </section>
     {% endif %}
 
     <!-- Social -->

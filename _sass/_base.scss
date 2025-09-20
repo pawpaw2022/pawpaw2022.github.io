@@ -2,6 +2,72 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// Single Page Layout Styles
+.section {
+  padding: 60px 0;
+  margin-bottom: 0;
+  
+  &:first-of-type {
+    padding-top: 120px; // Account for fixed navbar
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--global-theme-color);
+    text-align: center;
+    position: relative;
+    
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--global-theme-color);
+      margin: 1rem auto;
+    }
+  }
+}
+
+// Smooth scroll navigation styles
+.smooth-scroll {
+  transition: all 0.3s ease;
+  position: relative;
+  
+  &:hover {
+    color: var(--global-theme-color) !important;
+    text-decoration: none;
+  }
+  
+  &.active {
+    color: var(--global-theme-color) !important;
+    font-weight: 600;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--global-theme-color);
+      border-radius: 1px;
+    }
+  }
+}
+
+// Single page content spacing
+.single-page-content {
+  .container {
+    max-width: 1200px;
+  }
+  
+  section {
+    scroll-margin-top: 100px; // Account for fixed navbar
+  }
+}
+
 // Typography
 
 p,
@@ -736,6 +802,7 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
 
       .preview {
+        // Preview styles can be added here if needed
       }
 
       .abbr {
