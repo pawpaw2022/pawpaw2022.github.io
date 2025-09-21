@@ -56,9 +56,11 @@
           <li class="nav-item">
             <a class="nav-link smooth-scroll" href="#services">Services</a>
           </li>
+          {% if site.sections.cv %}
           <li class="nav-item">
             <a class="nav-link smooth-scroll" href="#cv">CV</a>
           </li>
+          {% endif %}
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">

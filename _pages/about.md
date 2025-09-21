@@ -259,13 +259,15 @@ latest_posts:
 </section>
 {% endif %}
 
+{% if site.sections.cv %}
 <!-- CV Section -->
 <section id="cv" class="section">
   <div class="container">
     <h2 class="section-title">CV</h2>
     <div class="cv-content">
       <p>Download my CV: <a href="{{ '/assets/pdf/example_pdf.pdf' | relative_url }}" target="_blank">PDF Version</a></p>
-      <!-- <p>For a detailed CV, please download the PDF version above.</p> -->
+      <p>For a detailed CV, please download the PDF version above.</p>
     </div>
   </div>
 </section>
+{% endif %}

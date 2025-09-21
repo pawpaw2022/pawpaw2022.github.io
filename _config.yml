@@ -64,6 +64,7 @@ sections:
   news: false
   selected_papers: false
   latest_posts: false
+  cv: false
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
