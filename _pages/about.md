@@ -2,16 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>he/him</p>
+    <p>slu2022(AT)uchicago(DOT)edu</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -33,13 +32,15 @@ latest_posts:
     <div class="row">
       <div class="col-lg-8">
         <h2 class="section-title">About</h2>
-        <p>Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.</p>
+        <p>I am a second-year master's student in Computer Science at the University of Chicago. </p>
         
-        <p>Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.</p>
-        
-        <p>Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.</p>
+        <p>Previously, I achieved my bachelor's degree in Computer Science and Mathematics from the University of San Diego. </p>
+
+        <p>I am interested in software engineering, 3D reconstruction, computer graphics, AI and deep learning. I currently serve as a research assistant at <a href="https://3dl.cs.uchicago.edu/" target="_blank">UChicago's 3DL</a>, advised by Prof. <a href="https://3dl.cs.uchicago.edu/people/rana-hanocka/" target="_blank">Rana Hanocka</a>.</p>
+
       </div>
     </div>
+
   </div>
 </section>
 
@@ -54,38 +55,47 @@ latest_posts:
   </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects" class="section">
+<!-- Services Section -->
+<section id="services" class="section">
   <div class="container">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects">
-      {% if site.enable_project_categories %}
-        <!-- Display categorized projects -->
-        {% for category in site.display_categories %}
-        <a id="{{ category }}" href=".#{{ category }}">
-          <h3 class="category">{{ category }}</h3>
-        </a>
-        {% assign categorized_projects = site.projects | where: "category", category %}
-        {% assign sorted_projects = categorized_projects | sort: "importance" %}
-        <!-- Generate cards for each project -->
-        <div class="row row-cols-1 row-cols-md-3">
-          {% for project in sorted_projects %}
-            {% include projects.liquid %}
-          {% endfor %}
-        </div>
-        {% endfor %}
-      {% else %}
-        <!-- Display projects without categories -->
-        {% assign sorted_projects = site.projects | sort: "importance" %}
-        <div class="row row-cols-1 row-cols-md-3">
-          {% for project in sorted_projects %}
-            {% include projects.liquid %}
-          {% endfor %}
-        </div>
-      {% endif %}
-    </div>
-  </div>
-</section>
+    <h2 class="section-title">Services</h2>
+    <div class="services">
+      <h3 class="category">Fullstack Development</h3>
+          <p>Besides doing research, I also provide fullstack development service.</p>
+          <p>Some tools that I use:</p>
+          <p>
+            <img alt="Docker" src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+            <img alt="Python" src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+            <img alt="React" src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+            <img alt="AWS" src="https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" />
+            <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
+            <img alt="MongoDB" src="https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+            <img alt="Bash" src="https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white" />
+            <img alt="GraphQL" src="https://img.shields.io/badge/-GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white" />
+            <img alt="CSS" src="https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white" />
+            <img alt="Kubernetes" src="https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
+            <img alt="Express.js" src="https://img.shields.io/badge/-Express.js-000000?style=flat-square&logo=express&logoColor=white" />
+            <img alt="Sass" src="https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=sass&logoColor=white" />
+            <img alt="Redis" src="https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
+            <img alt="HTML" src="https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white" />
+            <img alt="Go" src="https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white" />
+            <img alt="Nginx" src="https://img.shields.io/badge/-Nginx-009639?style=flat-square&logo=nginx&logoColor=white" />
+            <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+            <img alt="Terraform" src="https://img.shields.io/badge/-Terraform-623CE4?style=flat-square&logo=terraform&logoColor=white" />
+            <img alt="FastAPI" src="https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+            <img alt="Bootstrap" src="https://img.shields.io/badge/-Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" />
+            <img alt="MySQL" src="https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+            <img alt="Webpack" src="https://img.shields.io/badge/-Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=black" />
+            <img alt="Google Cloud" src="https://img.shields.io/badge/-Google%20Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white" />
+            <img alt="Java" src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" />
+            <img alt="Elasticsearch" src="https://img.shields.io/badge/-Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white" />
+            <img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
+            <img alt="Flask" src="https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white" />
+            <img alt="Spring Boot" src="https://img.shields.io/badge/-Spring%20Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white" />
+            <img alt="NPM" src="https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=npm&logoColor=white" />
+            <img alt="Node.js" src="https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
+            <img alt="RabbitMQ" src="https://img.shields.io/badge/-RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white" />
+          </p>
 
 <!-- Blog Section -->
 
@@ -255,7 +265,7 @@ latest_posts:
     <h2 class="section-title">CV</h2>
     <div class="cv-content">
       <p>Download my CV: <a href="{{ '/assets/pdf/example_pdf.pdf' | relative_url }}" target="_blank">PDF Version</a></p>
-      <p>For a detailed CV, please download the PDF version above or visit the <a href="{{ '/cv/' | relative_url }}">CV page</a>.</p>
+      <!-- <p>For a detailed CV, please download the PDF version above.</p> -->
     </div>
   </div>
 </section>

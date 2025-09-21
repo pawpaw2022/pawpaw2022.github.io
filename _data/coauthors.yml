@@ -32,3 +32,19 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"dinh":
+  - firstname: ["N. A."]
+    url: https://people.cs.uchicago.edu/~namanh/
+
+"lang":
+  - firstname: ["I."]
+    url: https://itailang.github.io/
+
+"holtzman":
+  - firstname: ["A.", "Ariel"]
+    url: https://ariholtzman.com/
+
+"hanocka":
+  - firstname: ["R."]
+    url: https://people.cs.uchicago.edu/~ranahanocka/

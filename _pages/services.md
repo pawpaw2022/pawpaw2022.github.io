@@ -1,36 +1,36 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
+title: services
+permalink: /services/
+description: A growing collection of your services and offerings.
 nav: true
 nav_order: 3
 display_categories: [work, fun]
 horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
+<!-- pages/services.md -->
+<div class="services">
+{% if site.enable_service_categories and page.display_categories %}
+  <!-- Display categorized services -->
   {% for category in page.display_categories %}
   <a id="{{ category }}" href=".#{{ category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
+  {% assign categorized_services = site.services | where: "category", category %}
+  {% assign sorted_services = categorized_services | sort: "importance" %}
+  <!-- Generate cards for each service -->
   {% if page.horizontal %}
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
+    {% for service in sorted_services %}
       {% include projects_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
+    {% for service in sorted_services %}
       {% include projects.liquid %}
     {% endfor %}
   </div>
@@ -39,24 +39,24 @@ horizontal: false
 
 {% else %}
 
-<!-- Display projects without categories -->
+<!-- Display services without categories -->
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+{% assign sorted_services = site.services | sort: "importance" %}
 
-  <!-- Generate cards for each project -->
+  <!-- Generate cards for each service -->
 
 {% if page.horizontal %}
 
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
+    {% for service in sorted_services %}
       {% include projects_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
+    {% for service in sorted_services %}
       {% include projects.liquid %}
     {% endfor %}
   </div>
