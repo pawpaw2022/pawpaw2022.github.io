@@ -260,6 +260,7 @@ latest_posts:
 {% endif %}
 
 {% if site.sections.cv %}
+
 <!-- CV Section -->
 <section id="cv" class="section">
   <div class="container">
