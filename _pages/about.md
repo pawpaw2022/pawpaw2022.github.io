@@ -56,7 +56,7 @@ latest_posts:
 </section>
 
 <!-- Engineering Section -->
-<section id="services" class="section">
+<section id="engineering" class="section">
   <div class="container">
     <h2 class="section-title">Engineering</h2>
     <div class="services">
