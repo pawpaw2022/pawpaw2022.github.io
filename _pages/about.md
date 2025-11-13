@@ -55,13 +55,13 @@ latest_posts:
   </div>
 </section>
 
-<!-- Services Section -->
+<!-- Engineering Section -->
 <section id="services" class="section">
   <div class="container">
-    <h2 class="section-title">Services</h2>
+    <h2 class="section-title">Engineering</h2>
     <div class="services">
       <h3 class="category">Fullstack Development</h3>
-          <p>Besides doing research, I also provide fullstack development service.</p>
+          <p>Besides doing research, I also develop and deploy fullstack application.</p>
           <p>Some tools that I use:</p>
           <p>
             <img alt="Docker" src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
